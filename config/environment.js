@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'todolist',
     environment: environment,
+    contentSecurityPolicy:{'connect-src': "'self' wss://*.firebaseio.com"},
+    firebase: {databaseURL: 'https://ember-todo-125b2.firebaseio.com/'},
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
